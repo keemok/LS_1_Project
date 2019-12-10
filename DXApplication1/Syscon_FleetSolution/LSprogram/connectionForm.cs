@@ -382,11 +382,11 @@ namespace Syscon_Solution.LSprogram
                             string strrobotid = info.Key;
                             Robot_RegInfo value = info.Value;
 
-                            commBridge.onSelectRobotStatus_Basic_subscribes(strrobotid);
+                            commBridge.onSelectRobotStatus_Basic_subscribes(strrobotid); // 로봇 기본 상태
                             Thread.Sleep(Data.Instance.nSubscribeDelayTime);
-                            commBridge.onControllerstate_subscribe(strrobotid);
+                            commBridge.onControllerstate_subscribe(strrobotid); // CPU, RAM 상태
                             Thread.Sleep(Data.Instance.nSubscribeDelayTime);
-                            commBridge.onTaskResult_subscribe(strrobotid);
+                            commBridge.onTaskResult_subscribe(strrobotid); // TASK RESULT SUBS
                             Thread.Sleep(Data.Instance.nSubscribeDelayTime);
                             Invoke(new MethodInvoker(delegate ()
                             {

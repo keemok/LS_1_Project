@@ -120,7 +120,7 @@ namespace Syscon_Solution.LSprogram
 
         private void simpleButton16_Click(object sender, EventArgs e)
         {
-            onTaskPause("R_006");
+            onTaskPause("R_006"); //뮻ㅇㄷㅀ
         }
 
         private void simpleButton21_Click(object sender, EventArgs e)
@@ -407,6 +407,8 @@ namespace Syscon_Solution.LSprogram
                 Thread.Sleep(100);
             }
         }
+
+        // 로봇 배터리, 상태, 모니터링
         public void checkRobotstate()
         {
             try

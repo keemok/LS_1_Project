@@ -643,17 +643,17 @@ namespace Syscon_Solution.FleetManager.Comm
                 Data.Instance.Robot_work_info[strrobotid].robot_status_info.goalrunnigstatus.topic = strrobotid + list.topic_GoalrunningStatus;
 
 
-                onRealtimeRobotStatus_subscribe();
+                onRealtimeRobotStatus_subscribe(); // 로봇 좌표 및 워크스테이트 
                 Thread.Sleep(Data.Instance.nSubscribeDelayTime);
 
-                onRobotPosition_subscribe(strrobotid);
+                onRobotPosition_subscribe(strrobotid); // 안씀
                 Thread.Sleep(Data.Instance.nSubscribeDelayTime);
 
-                onMotorState_subscribe(strrobotid);
+                onMotorState_subscribe(strrobotid); // 모터 상태
                 Thread.Sleep(Data.Instance.nSubscribeDelayTime);
 
 
-                onGlobalPlanner_subscribe(strrobotid);
+                onGlobalPlanner_subscribe(strrobotid); // 로봇 좌표
                 Thread.Sleep(Data.Instance.nSubscribeDelayTime);
 
                 //task 수행시만

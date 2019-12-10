@@ -63,6 +63,7 @@ namespace Rosbridge.Client
             if (_disposed)
             {
                 throw new ObjectDisposedException("Socket");
+
             }
 
             return Task.Run(async () =>
