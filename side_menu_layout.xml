@@ -1,0 +1,341 @@
+﻿<XtraSerializer version="1.0" application="AccordionControl">
+  <property name="#LayoutVersion" />
+  <property name="ItemHeight">0</property>
+  <property name="GroupHeight">0</property>
+  <property name="ExpandElementMode">SingleItem</property>
+  <property name="AnimationType">Default</property>
+  <property name="Elements" iskey="true" value="8">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Item</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">Main</property>
+      <property name="Name">main</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Visible">true</property>
+      <property name="Name">accordionControlSeparator1</property>
+      <property name="Height">0</property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Group</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">true</property>
+      <property name="Visible">true</property>
+      <property name="Text">Robot</property>
+      <property name="Name">accordionControlElement2</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="8">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">OVERVIEW</property>
+          <property name="Name">overview</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 000</property>
+          <property name="Name">robot000</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item3" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 001</property>
+          <property name="Name">robot001</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item4" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 002</property>
+          <property name="Name">robot002</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item5" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 003</property>
+          <property name="Name">robot003</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item6" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 004</property>
+          <property name="Name">robot004</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item7" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 005</property>
+          <property name="Name">robot005</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item8" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot 006</property>
+          <property name="Name">robot006</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+      </property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Item</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">MAP</property>
+      <property name="Name">map</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Item</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">Mission modify</property>
+      <property name="Name">missionmodify</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Item</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">Task modify</property>
+      <property name="Name">taskmodify</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Item</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">false</property>
+      <property name="Visible">true</property>
+      <property name="Text">Task operation</property>
+      <property name="Name">taskoperation</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="0" />
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="#LayoutVersion" />
+      <property name="Style">Group</property>
+      <property name="ControlFooterAlignment">Near</property>
+      <property name="HeaderIndent">-1</property>
+      <property name="HeaderVisible">true</property>
+      <property name="Expanded">true</property>
+      <property name="Visible">true</property>
+      <property name="Text">Setting</property>
+      <property name="Name">accordionControlElement14</property>
+      <property name="Height">0</property>
+      <property name="HeaderTemplate" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true" />
+        <property name="Item2" isnull="true" iskey="true" />
+        <property name="Item3" isnull="true" iskey="true" />
+        <property name="Item4" isnull="true" iskey="true" />
+      </property>
+      <property name="Elements" iskey="true" value="2">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">Robot setting</property>
+          <property name="Name">robotsetting</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="#LayoutVersion" />
+          <property name="Style">Item</property>
+          <property name="ControlFooterAlignment">Near</property>
+          <property name="HeaderIndent">-1</property>
+          <property name="HeaderVisible">true</property>
+          <property name="Expanded">false</property>
+          <property name="Visible">true</property>
+          <property name="Text">XIS Setting</property>
+          <property name="Name">xissetting</property>
+          <property name="Height">0</property>
+          <property name="HeaderTemplate" iskey="true" value="4">
+            <property name="Item1" isnull="true" iskey="true" />
+            <property name="Item2" isnull="true" iskey="true" />
+            <property name="Item3" isnull="true" iskey="true" />
+            <property name="Item4" isnull="true" iskey="true" />
+          </property>
+          <property name="Elements" iskey="true" value="0" />
+        </property>
+      </property>
+    </property>
+  </property>
+</XtraSerializer>

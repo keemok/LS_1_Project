@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F19F668-B26F-4A09-8FF9-1485D34438F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SysSolution</RootNamespace>
+    <AssemblyName>SysSolution</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_demo</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;_demo</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'workorder_release|AnyCPU'">
+    <OutputPath>bin\workorder_release\</OutputPath>
+    <DefineConstants>TRACE;_workorder</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'workorder_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\workorder_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_workorder</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'robotstatus_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\robotstatus_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_robotstatus</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'robotstatus_release|AnyCPU'">
+    <OutputPath>bin\robotstatus_release\</OutputPath>
+    <DefineConstants>TRACE;_robotstatus</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Map_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Map_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_map</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Map_release|AnyCPU'">
+    <OutputPath>bin\Map_release\</OutputPath>
+    <DefineConstants>TRACE;_map</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_gcU_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JobHistory_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\JobHistory_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_jobhistory</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JobHistory_release|AnyCPU'">
+    <OutputPath>bin\JobHistory_release\</OutputPath>
+    <DefineConstants>TRACE;_jobhistory</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'solution_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\solution_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_sol</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'solution_release|AnyCPU'">
+    <OutputPath>bin\solution_release\</OutputPath>
+    <DefineConstants>TRACE;_sol</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UR_Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\UR_Test\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_urtest</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UR_Test_release|AnyCPU'">
+    <OutputPath>bin\UR_Test_release\</OutputPath>
+    <DefineConstants>TRACE;_urtest</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'robotstatusOne_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\robotstatusOne_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_statusone</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'robotstatusOne_release|AnyCPU'">
+    <OutputPath>bin\robotstatusOne_release\</OutputPath>
+    <DefineConstants>TRACE;_statusone</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fleet_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\fleet_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_fleet</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fleet_release|AnyCPU'">
+    <OutputPath>bin\fleet_release\</OutputPath>
+    <DefineConstants>TRACE;_fleet</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fleet_demo_debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\fleet_demo_debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_fleet,_fleetdemo</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fleet_demo_release|AnyCPU'">
+    <OutputPath>bin\fleet_demo_release\</OutputPath>
+    <DefineConstants>TRACE;_fleet,_fleetdemo</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '_delivery|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\_delivery\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_delivery</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '_delivery_release|AnyCPU'">
+    <OutputPath>bin\_delivery_release\</OutputPath>
+    <DefineConstants>TRACE;_delivery</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_mapping|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_mapping\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_demo</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_mapping|AnyCPU'">
+    <OutputPath>bin\Release_mapping\</OutputPath>
+    <DefineConstants>TRACE;_demo</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v19.1.Win, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.UI, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Presets, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Win, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="Delivery\DeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery\DeliveryForm.Designer.cs">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoForm0131.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoForm0131.Designer.cs">
+      <DependentUpon>DemoForm0131.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\ActionInsertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\ActionInsertDlg.Designer.cs">
+      <DependentUpon>ActionInsertDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\FleetManager_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\FleetManager_MainForm.Designer.cs">
+      <DependentUpon>FleetManager_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Map\MapCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Map\MapCtrl.Designer.cs">
+      <DependentUpon>MapCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\MissionEdit_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\MissionEdit_ctrl.Designer.cs">
+      <DependentUpon>MissionEdit_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\MissionInsertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\MissionInsertDlg.Designer.cs">
+      <DependentUpon>MissionInsertDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Demo\JobOrder_Demo_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Demo\JobOrder_Demo_ctrl.Designer.cs">
+      <DependentUpon>JobOrder_Demo_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\MonitoringMain_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\MonitoringMain_Ctrl.Designer.cs">
+      <DependentUpon>MonitoringMain_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\RobotMointoring_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\RobotMointoring_Ctrl.Designer.cs">
+      <DependentUpon>RobotMointoring_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\UserGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Monitoring\UserGraph.Designer.cs">
+      <DependentUpon>UserGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\order\JobOrder_ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\order\JobOrder_ctrl.Designer.cs">
+      <DependentUpon>JobOrder_ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\setting\JobReg_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\setting\JobReg_Ctrl.Designer.cs">
+      <DependentUpon>JobReg_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\setting\RobotReg_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\setting\RobotReg_Ctrl.Designer.cs">
+      <DependentUpon>RobotReg_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\setting\SettingMainCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\setting\SettingMainCtrl.Designer.cs">
+      <DependentUpon>SettingMainCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\Dashboard_RobotStatusCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm\Dashboard_RobotStatusCtrl.Designer.cs">
+      <DependentUpon>Dashboard_RobotStatusCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\Dashboard_WorkAmount_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm\Dashboard_WorkAmount_Ctrl.Designer.cs">
+      <DependentUpon>Dashboard_WorkAmount_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\Dashboard_WorkReport_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm\Dashboard_WorkReport_Ctrl.Designer.cs">
+      <DependentUpon>Dashboard_WorkReport_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\ErrorMsgDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\ErrorMsgDlg.Designer.cs">
+      <DependentUpon>ErrorMsgDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\ingdlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\ingdlg.Designer.cs">
+      <DependentUpon>ingdlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\ManualFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\ManualFrm.Designer.cs">
+      <DependentUpon>ManualFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\MapMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\MapMonitor.Designer.cs">
+      <DependentUpon>MapMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\RobotStatusFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\RobotStatusFrm.Designer.cs">
+      <DependentUpon>RobotStatusFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\WorkOrderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\WorkOrderFrm.Designer.cs">
+      <DependentUpon>WorkOrderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\WorkRegFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\WorkRegFrm.Designer.cs">
+      <DependentUpon>WorkRegFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\WorkResultFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\WorkResultFrm.Designer.cs">
+      <DependentUpon>WorkResultFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapDspForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapDspForm.Designer.cs">
+      <DependentUpon>MapDspForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pattern\Singleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource_jo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource_jo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RobotJob_HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotJob_HistoryForm.Designer.cs">
+      <DependentUpon>RobotJob_HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="robotmonitoring\RoboMonitoringCtrl_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="robotmonitoring\RoboMonitoringCtrl_1.Designer.cs">
+      <DependentUpon>RoboMonitoringCtrl_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="robotmonitoring\RobotCamMonitoringCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="robotmonitoring\RobotCamMonitoringCtrl.Designer.cs">
+      <DependentUpon>RobotCamMonitoringCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="robotmonitoring\RobotMonitoringCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="robotmonitoring\RobotMonitoringCtrl.Designer.cs">
+      <DependentUpon>RobotMonitoringCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotSelectForm.Designer.cs">
+      <DependentUpon>RobotSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotStatusForm.Designer.cs">
+      <DependentUpon>RobotStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotStatusForm_One.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotStatusForm_One.Designer.cs">
+      <DependentUpon>RobotStatusForm_One.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rosinterface.cs" />
+    <Compile Include="Topic\TopicList.cs" />
+    <Compile Include="TreeViewSerializer.cs" />
+    <Compile Include="Type\SysconType.cs" />
+    <Compile Include="UR_Sample\URControl_TestFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UR_Sample\URControl_TestFrm.Designer.cs">
+      <DependentUpon>URControl_TestFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker.cs" />
+    <Compile Include="WorkOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrderForm.Designer.cs">
+      <DependentUpon>WorkOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XISMonitoringCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XISMonitoringCtrl.Designer.cs">
+      <DependentUpon>XISMonitoringCtrl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Delivery\DeliveryForm.resx">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoForm0131.resx">
+      <DependentUpon>DemoForm0131.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\ActionInsertDlg.resx">
+      <DependentUpon>ActionInsertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\FleetManager_MainForm.resx">
+      <DependentUpon>FleetManager_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Map\MapCtrl.resx">
+      <DependentUpon>MapCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\MissionEdit_ctrl.resx">
+      <DependentUpon>MissionEdit_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\MissionInsertDlg.resx">
+      <DependentUpon>MissionInsertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Demo\JobOrder_Demo_ctrl.resx">
+      <DependentUpon>JobOrder_Demo_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Monitoring\MonitoringMain_Ctrl.resx">
+      <DependentUpon>MonitoringMain_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Monitoring\RobotMointoring_Ctrl.resx">
+      <DependentUpon>RobotMointoring_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Monitoring\UserGraph.resx">
+      <DependentUpon>UserGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\order\JobOrder_ctrl.resx">
+      <DependentUpon>JobOrder_ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\setting\JobReg_Ctrl.resx">
+      <DependentUpon>JobReg_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\setting\RobotReg_Ctrl.resx">
+      <DependentUpon>RobotReg_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\setting\SettingMainCtrl.resx">
+      <DependentUpon>SettingMainCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\Dashboard_RobotStatusCtrl.resx">
+      <DependentUpon>Dashboard_RobotStatusCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\Dashboard_WorkAmount_Ctrl.resx">
+      <DependentUpon>Dashboard_WorkAmount_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\Dashboard_WorkReport_Ctrl.resx">
+      <DependentUpon>Dashboard_WorkReport_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\ErrorMsgDlg.resx">
+      <DependentUpon>ErrorMsgDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\ingdlg.resx">
+      <DependentUpon>ingdlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\ManualFrm.resx">
+      <DependentUpon>ManualFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\MapMonitor.resx">
+      <DependentUpon>MapMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\RobotStatusFrm.resx">
+      <DependentUpon>RobotStatusFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\WorkOrderFrm.resx">
+      <DependentUpon>WorkOrderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\WorkRegFrm.resx">
+      <DependentUpon>WorkRegFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\WorkResultFrm.resx">
+      <DependentUpon>WorkResultFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapDspForm.resx">
+      <DependentUpon>MapDspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resource_jo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource_jo1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotJob_HistoryForm.resx">
+      <DependentUpon>RobotJob_HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="robotmonitoring\RoboMonitoringCtrl_1.resx">
+      <DependentUpon>RoboMonitoringCtrl_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="robotmonitoring\RobotCamMonitoringCtrl.resx">
+      <DependentUpon>RobotCamMonitoringCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="robotmonitoring\RobotMonitoringCtrl.resx">
+      <DependentUpon>RobotMonitoringCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotSelectForm.resx">
+      <DependentUpon>RobotSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotStatusForm.resx">
+      <DependentUpon>RobotStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotStatusForm_One.resx">
+      <DependentUpon>RobotStatusForm_One.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UR_Sample\URControl_TestFrm.resx">
+      <DependentUpon>URControl_TestFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrderForm.resx">
+      <DependentUpon>WorkOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XISMonitoringCtrl.resx">
+      <DependentUpon>XISMonitoringCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\rosbridge_client_common\rosbridge_client_common.csproj">
+      <Project>{7167262b-09b1-435b-ac01-6a3f94449c72}</Project>
+      <Name>rosbridge_client_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rosbridge_client_socket_for_desktop\rosbridge_client_desktop.csproj">
+      <Project>{7b7ba4bb-4789-400b-9373-20321a8fb966}</Project>
+      <Name>rosbridge_client_desktop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="robot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Robot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Robot2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Robot_goods.jpg" />
+    <None Include="img\크기변환_위로.png" />
+    <None Include="img\크기변환_왼쪽위대각.png" />
+    <None Include="img\크기변환_오른쪽위대각.png" />
+    <None Include="img\크기변환_왼쪽.png" />
+    <None Include="img\크기변환_오른쪽.png" />
+    <None Include="img\크기변환_왼쪽아래대각.png" />
+    <None Include="img\크기변환_아래로.png" />
+    <None Include="img\크기변환_오른쪽아래대각.png" />
+    <None Include="img\거치대.jpg" />
+    <None Include="img\거치대물건.jpg" />
+    <None Include="img\드럼통.jpg" />
+    <None Include="img\MarkerData_0.png" />
+    <None Include="img\MarkerData_1.png" />
+    <None Include="img\MarkerData_2.png" />
+    <Content Include="logo_gcU_icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

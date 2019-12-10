@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8912A6C-B0CB-4C3F-A0CE-31B04061D798}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Syscon_Solution</RootNamespace>
+    <AssemblyName>Syscon_Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_fleetmain</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;_fleetmain</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_mapping|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_mapping\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_mapping</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_mapping|AnyCPU'">
+    <OutputPath>bin\Release_mapping\</OutputPath>
+    <DefineConstants>TRACE;_mapping</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.UI, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Wizard, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.1.Win, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SnmpSharpNet">
+      <HintPath>D:\project\packages\SnmpSharpNet\SnmpSharpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="Exhibition\exhibitionMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exhibition\exhibitionMain.Designer.cs">
+      <DependentUpon>exhibitionMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exhibition\monitoringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exhibition\monitoringForm.Designer.cs">
+      <DependentUpon>monitoringForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exhibition\networkStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exhibition\networkStatus.Designer.cs">
+      <DependentUpon>networkStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exhibition\SubconSocket.cs" />
+    <Compile Include="Exhibition\taskoperationForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exhibition\taskoperationForm.Designer.cs">
+      <DependentUpon>taskoperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\Comm\Comm_bridge.cs" />
+    <Compile Include="FleetManager\DB\DB_bridge.cs" />
+    <Compile Include="FleetManager\Fleet_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\Fleet_Main.Designer.cs">
+      <DependentUpon>Fleet_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\ActionInsertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\ActionInsertDlg.Designer.cs">
+      <DependentUpon>ActionInsertDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MapEdit_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MapEdit_Ctrl.Designer.cs">
+      <DependentUpon>MapEdit_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MissionEdit_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MissionEdit_Ctrl.Designer.cs">
+      <DependentUpon>MissionEdit_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MissionInsertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\MissionInsertDlg.Designer.cs">
+      <DependentUpon>MissionInsertDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\TaskEdit_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Edit\TaskEdit_Ctrl.Designer.cs">
+      <DependentUpon>TaskEdit_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Monitoring\MapMonitoring_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Monitoring\MapMonitoring_Ctrl.Designer.cs">
+      <DependentUpon>MapMonitoring_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Monitoring\RobotMonitoring_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Monitoring\RobotMonitoring_Ctrl.Designer.cs">
+      <DependentUpon>RobotMonitoring_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetManager\UI\Task\TaskOperation_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FleetManager\UI\Task\TaskOperation_Ctrl.Designer.cs">
+      <DependentUpon>TaskOperation_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingdlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingdlg.Designer.cs">
+      <DependentUpon>ingdlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\actioninsertDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\actioninsertDlg.Designer.cs">
+      <DependentUpon>actioninsertDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\APsnmp.cs" />
+    <Compile Include="LSprogram\connectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\connectionForm.Designer.cs">
+      <DependentUpon>connectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\conntest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\conntest.Designer.cs">
+      <DependentUpon>conntest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\displayMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\displayMap.Designer.cs">
+      <DependentUpon>displayMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\edit\CautionAreaSaveDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\edit\CautionAreaSaveDlg.Designer.cs">
+      <DependentUpon>CautionAreaSaveDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\edit\mapEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\edit\mapEdit.Designer.cs">
+      <DependentUpon>mapEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\etc\alarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\etc\alarmForm.Designer.cs">
+      <DependentUpon>alarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\etc\object_plc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\etc\object_plc.Designer.cs">
+      <DependentUpon>object_plc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\firstForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\firstForm.Designer.cs">
+      <DependentUpon>firstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\tempDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\tempDlg.Designer.cs">
+      <DependentUpon>tempDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\LS_Socket.cs" />
+    <Compile Include="LSprogram\mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\mapmonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\mapmonitoring.Designer.cs">
+      <DependentUpon>mapmonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\missioneditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\missioneditDlg.Designer.cs">
+      <DependentUpon>missioneditDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\missioneditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\missioneditForm.Designer.cs">
+      <DependentUpon>missioneditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\plctestform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\plctestform.Designer.cs">
+      <DependentUpon>plctestform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\robotMonitoring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\robotMonitoring.Designer.cs">
+      <DependentUpon>robotMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\robotOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\robotOverview.Designer.cs">
+      <DependentUpon>robotOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\Setting\roboteditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\Setting\roboteditForm.Designer.cs">
+      <DependentUpon>roboteditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\Setting\xiseditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\Setting\xiseditForm.Designer.cs">
+      <DependentUpon>xiseditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\splashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\splashForm.Designer.cs">
+      <DependentUpon>splashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\Structure\GlobalVar.cs" />
+    <Compile Include="LSprogram\systemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\systemLog.Designer.cs">
+      <DependentUpon>systemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\missionEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\missionEdit.Designer.cs">
+      <DependentUpon>missionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\taskEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\taskEdit.Designer.cs">
+      <DependentUpon>taskEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\taskoperationForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LSprogram\taskoperationForm.Designer.cs">
+      <DependentUpon>taskoperationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSprogram\Tester_version_0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSprogram\Tester_version_0.Designer.cs">
+      <DependentUpon>Tester_version_0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LS_TEST\mappingform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LS_TEST\mappingform.Designer.cs">
+      <DependentUpon>mappingform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LS_TEST\testMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LS_TEST\testMain.Designer.cs">
+      <DependentUpon>testMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingManager\MappingMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingManager\MappingMain.Designer.cs">
+      <DependentUpon>MappingMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingManager\Mapping_Ctrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MappingManager\Mapping_Ctrl.Designer.cs">
+      <DependentUpon>Mapping_Ctrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MappingManager\MapSaveDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappingManager\MapSaveDlg.Designer.cs">
+      <DependentUpon>MapSaveDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pattern\Singleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rosinterface.cs" />
+    <Compile Include="Topic\TopicList.cs" />
+    <Compile Include="Type\SysconType.cs" />
+    <EmbeddedResource Include="Exhibition\exhibitionMain.resx">
+      <DependentUpon>exhibitionMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exhibition\monitoringForm.resx">
+      <DependentUpon>monitoringForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exhibition\networkStatus.resx">
+      <DependentUpon>networkStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exhibition\taskoperationForm.resx">
+      <DependentUpon>taskoperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\Fleet_Main.resx">
+      <DependentUpon>Fleet_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Edit\ActionInsertDlg.resx">
+      <DependentUpon>ActionInsertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Edit\MapEdit_Ctrl.resx">
+      <DependentUpon>MapEdit_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Edit\MissionEdit_Ctrl.resx">
+      <DependentUpon>MissionEdit_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Edit\MissionInsertDlg.resx">
+      <DependentUpon>MissionInsertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Edit\TaskEdit_Ctrl.resx">
+      <DependentUpon>TaskEdit_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Monitoring\MapMonitoring_Ctrl.resx">
+      <DependentUpon>MapMonitoring_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Monitoring\RobotMonitoring_Ctrl.resx">
+      <DependentUpon>RobotMonitoring_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetManager\UI\Task\TaskOperation_Ctrl.resx">
+      <DependentUpon>TaskOperation_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingdlg.resx">
+      <DependentUpon>ingdlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\actioninsertDlg.resx">
+      <DependentUpon>actioninsertDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\connectionForm.resx">
+      <DependentUpon>connectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\conntest.resx">
+      <DependentUpon>conntest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\displayMap.resx">
+      <DependentUpon>displayMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\edit\CautionAreaSaveDlg.resx">
+      <DependentUpon>CautionAreaSaveDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\edit\mapEdit.resx">
+      <DependentUpon>mapEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\etc\alarmForm.resx">
+      <DependentUpon>alarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\etc\object_plc.resx">
+      <DependentUpon>object_plc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\firstForm.resx">
+      <DependentUpon>firstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\mapmonitoring.resx">
+      <DependentUpon>mapmonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\missionEdit.resx">
+      <DependentUpon>missionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\missioneditDlg.resx">
+      <DependentUpon>missioneditDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\missioneditForm.resx">
+      <DependentUpon>missioneditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\plctestform.resx">
+      <DependentUpon>plctestform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\robotMonitoring.resx">
+      <DependentUpon>robotMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\robotOverview.resx">
+      <DependentUpon>robotOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\Setting\roboteditForm.resx">
+      <DependentUpon>roboteditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\splashForm.resx">
+      <DependentUpon>splashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\systemLog.resx">
+      <DependentUpon>systemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\taskEdit.resx">
+      <DependentUpon>taskEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\taskoperationForm.resx">
+      <DependentUpon>taskoperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\tempDlg.resx">
+      <DependentUpon>tempDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSprogram\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LS_TEST\mappingform.resx">
+      <DependentUpon>mappingform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LS_TEST\testMain.resx">
+      <DependentUpon>testMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingManager\MappingMain.resx">
+      <DependentUpon>MappingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingManager\Mapping_Ctrl.resx">
+      <DependentUpon>Mapping_Ctrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MappingManager\MapSaveDlg.resx">
+      <DependentUpon>MapSaveDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Syscon_Solution.LSprogram.mainForm+missionType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\rosbridge_client_common\rosbridge_client_common.csproj">
+      <Project>{7167262b-09b1-435b-ac01-6a3f94449c72}</Project>
+      <Name>rosbridge_client_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\rosbridge_client_socket_for_desktop\rosbridge_client_desktop.csproj">
+      <Project>{7b7ba4bb-4789-400b-9373-20321a8fb966}</Project>
+      <Name>rosbridge_client_desktop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\rosbridge_interface\rosbridge_interface.csproj">
+      <Project>{250e9e04-a425-4dc8-a5be-847987be38c6}</Project>
+      <Name>rosbridge_interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FleetManager\UI\Map\" />
+    <Folder Include="FleetManager\UI\Result\" />
+    <Folder Include="FleetManager\UI\Setting\" />
+    <Folder Include="Structure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Robot1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Robot2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
