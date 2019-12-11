@@ -150,8 +150,6 @@ namespace Syscon_Solution.LSprogram
                     Thread.Sleep(1500);
                     Invoke(new MethodInvoker(delegate ()
                     {
-                        textBox1.Text = temp.ToString();
-                        textBox2.Text = Data.Instance.Robot_work_info[info.Key].robot_status_info.controllerstate.msg.data[0].ToString();
 
                     }));
                     if (temp == Data.Instance.Robot_work_info[info.Key].robot_status_info.controllerstate.msg.data[0])
@@ -191,10 +189,17 @@ namespace Syscon_Solution.LSprogram
                                 {
                                     robotPanel[i].Enabled = true;
 
-                                    robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
-                                    robotAmpare[i].Text = string.Format("{0:f1}A", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[1]);
-                                    robotVolt[i].Text = string.Format("{0:f1}V", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[0]);
-                                    robotBatteryscale[i].Value = Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3];
+                                    if(Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo != null)
+                                    {
+                                        if(Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data.Count > 0)
+                                        {
+                                            robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                            robotAmpare[i].Text = string.Format("{0:f1}A", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[1]);
+                                            robotVolt[i].Text = string.Format("{0:f1}V", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[0]);
+                                            robotBatteryscale[i].Value = Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3];
+                                        }
+                                    }
+                                    
 
                                     for(int j = 0; j<Data.Instance.robot_liveinfo.robotinfo.msg.robolist.Count;j++)
                                     {

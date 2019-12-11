@@ -192,19 +192,19 @@ namespace Syscon_Solution.LSprogram
         {
             try
             {
-                if (mainform.Session_1_mission.Count > 0)
+                if (mainform.Session_1_mission.Count > -1)
                 {
                     Invoke(new MethodInvoker(delegate ()
                     {
                         Session_1_listbox.Items.Clear();
-                        for(int i=0;i<mainform.Session_1_mission.Count;i++)
+                        for (int i = 0; i < mainform.Session_1_mission.Count; i++)
                         {
                             Session_1_listbox.Items.Add($"ATC : {mainform.Session_1_mission[i].atcNO} START : {mainform.Session_1_mission[i].startID} REQUIRED : {mainform.Session_1_mission[i].requiredID}");
                         }
                     }));
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine($"------------------> DP_SESSION_1 ERROR <----------- {e}");
             }
@@ -213,7 +213,7 @@ namespace Syscon_Solution.LSprogram
         {
             try
             {
-                if (mainform.Session_2_mission.Count > 0)
+                if (mainform.Session_2_mission.Count > -1)
                 {
                     Invoke(new MethodInvoker(delegate ()
                     {
@@ -224,7 +224,7 @@ namespace Syscon_Solution.LSprogram
                         }
                     }));
                 }
-                
+
             }
             catch (Exception e)
             {
@@ -409,17 +409,34 @@ namespace Syscon_Solution.LSprogram
         }
 
         // 로봇 배터리, 상태, 모니터링
+        public void temp()
+        {
+            try
+            {
+                while(true)
+                {
+                    int workstate_ = 0;
+                    
+                }
+            }
+            catch
+            {
+
+            }
+        }
         public void checkRobotstate()
         {
             try
             {
                 while (true)
                 {
+                    int j = 0;
                     int workstate_ = 99;
                     List<string> key = new List<string>(Data.Instance.onRobot.Keys);
-                    foreach (string robot in key)
+
+                    for (int i = 0; i < robotPanel.Count(); i++)
                     {
-                        for (int i = 0; i < robotPanel.Count(); i++)
+                        foreach (string robot in key)
                         {
                             if (robotPanel[i].Tag.ToString().Contains(robot))
                             {
@@ -427,35 +444,57 @@ namespace Syscon_Solution.LSprogram
                                 {
                                     robotPanel[i].Enabled = true;
 
-                                    if (Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3] > 70)
+                                    if(Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo != null)
                                     {
-                                        robotBattery[i].ForeColor = Color.Blue;
-                                        robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
-                                    }
-                                    else if (Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3] > 25)
-                                    {
-                                        robotBattery[i].ForeColor = Color.GreenYellow;
-                                        robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                        if(Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data.Count > 0)
+                                        {
+                                            if (Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3] > 70)
+                                            {
+                                                robotBattery[i].ForeColor = Color.Blue;
+                                                robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                            }
+                                            else if (Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3] > 25)
+                                            {
+                                                robotBattery[i].ForeColor = Color.GreenYellow;
+                                                robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                            }
+                                            else
+                                            {
+                                                robotBattery[i].ForeColor = Color.OrangeRed;
+                                                robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                            }
+                                        }
                                     }
                                     else
                                     {
-                                        robotBattery[i].ForeColor = Color.OrangeRed;
-                                        robotBattery[i].Text = string.Format("{0:f1}%", Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3]);
+                                        Invoke(new MethodInvoker(delegate ()
+                                        {
+                                            robotPanel[i].Enabled = false;
+                                        }));
                                     }
-
                                     //robotBatteryscale[i].Value = Data.Instance.Robot_work_info[robot].robot_status_info.bmsinfo.msg.data[3];
 
-                                    for (int j = 0; j < Data.Instance.robot_liveinfo.robotinfo.msg.robolist.Count; j++)
+                                    for (j = 0; j < Data.Instance.robot_liveinfo.robotinfo.msg.robolist.Count; j++)
                                     {
                                         if (Data.Instance.robot_liveinfo.robotinfo.msg.robolist[j].RID.Contains(robot))
                                         {
                                             workstate_ = Data.Instance.robot_liveinfo.robotinfo.msg.robolist[j].workstate;
+                                            j = 0;
                                             break;
+                                        }
+                                        else
+                                        {
+                                            workstate_ = 99;
                                         }
                                     }
                                     robotstate[i].Text = this.workstate(workstate_);
 
+
+
                                 }));
+                            }
+                            else
+                            {
                             }
                         }
                     }

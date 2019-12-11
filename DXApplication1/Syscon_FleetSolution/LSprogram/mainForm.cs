@@ -1057,7 +1057,7 @@ namespace Syscon_Solution.LSprogram
                     // 암것도 안함
                 }
             }
-            else // 시나리오 아님
+            else // 시나리오 아님 
             {
                 deleteMisionList(id, atcNo);
                 printMsg($"상황 해제 [{atcNo}], [{false}] ");
@@ -1158,7 +1158,7 @@ namespace Syscon_Solution.LSprogram
             {
                 try
                 {
-                    if (Data.Instance.isConnected)
+                    if (Data.Instance.isConnected) // 리디스 접속 됐는지
                     {
 
                         foreach (KeyValuePair<string, Robot_RegInfo> info in Data.Instance.Robot_RegInfo_list)
@@ -1172,6 +1172,15 @@ namespace Syscon_Solution.LSprogram
                                     //if (Data.Instance.Robot_work_info[info.Key].robot_status_info.bmsinfo.msg.data.Count() > 0)
                                     if (true)
                                     {
+                                        for (int i2 = 0; i2 < Data.Instance.robot_liveinfo.robotinfo.msg.robolist.Count; i2++)
+                                        {
+                                            string RID = Data.Instance.robot_liveinfo.robotinfo.msg.robolist[i2].RID;
+                                            double x = Data.Instance.robot_liveinfo.robotinfo.msg.robolist[i2].pose.x;
+                                            double y = Data.Instance.robot_liveinfo.robotinfo.msg.robolist[i2].pose.y;
+                                            double theta = Data.Instance.robot_liveinfo.robotinfo.msg.robolist[i2].pose.theta;
+
+                                            Console.WriteLine($"RID : {RID} x : {x} y: : {y}");
+                                        }
                                         if (!Data.Instance.onRobot.ContainsKey(info.Key))
                                         {
                                             Data.Instance.onRobot.Add(info.Key, true);
@@ -1456,6 +1465,7 @@ namespace Syscon_Solution.LSprogram
                                         mission = Session_1_mission.Last().mission_;
 
                                         PLC_Socket_Info[requiredID].SetSTATE(3);
+                                        PLC_Socket_Info[requiredID].startATCNo = atcNO;
                                         PLC_Socket_Info[startID].SetSTATE(3);
                                         setATCState(atcNO, true);
 
@@ -1469,9 +1479,9 @@ namespace Syscon_Solution.LSprogram
 
                                         bRun_001 = false;
                                         Enable_Robot_List.Remove("R_001");
-                                        Session_1_mission.RemoveAll(n => n.atcNO == atcNO && n.requiredID == requiredID);
+                                        
                                         firstform.DP_Session_2();
-
+                                        Session_1_mission.RemoveAll(n => n.atcNO == atcNO && n.requiredID == requiredID);
 
                                         Invoke(new MethodInvoker(delegate ()
                                         {
@@ -1484,7 +1494,7 @@ namespace Syscon_Solution.LSprogram
                                         temp.requiredID = requiredID;
                                         if (!resetPLC.Keys.Contains("R_001"))
                                             resetPLC.Add("R_001", temp);
-                                        Delay(10000); ;
+                                        Delay(10000); 
                                         break;
 
                                     }
@@ -1502,6 +1512,7 @@ namespace Syscon_Solution.LSprogram
                                         mission = Session_1_mission.Last().mission_;
 
                                         PLC_Socket_Info[requiredID].SetSTATE(3);
+                                        PLC_Socket_Info[requiredID].startATCNo = atcNO;
                                         PLC_Socket_Info[startID].SetSTATE(3);
                                         setATCState(atcNO, true);
 
@@ -1542,6 +1553,7 @@ namespace Syscon_Solution.LSprogram
                                         mission = Session_1_mission.Last().mission_;
 
                                         PLC_Socket_Info[requiredID].SetSTATE(3);
+                                        PLC_Socket_Info[requiredID].startATCNo = atcNO;
                                         PLC_Socket_Info[startID].SetSTATE(3);
                                         setATCState(atcNO, true);
 
@@ -1581,6 +1593,7 @@ namespace Syscon_Solution.LSprogram
                                         mission = Session_1_mission.Last().mission_;
 
                                         PLC_Socket_Info[requiredID].SetSTATE(3);
+                                        PLC_Socket_Info[requiredID].startATCNo = atcNO;
                                         PLC_Socket_Info[startID].SetSTATE(3);
                                         setATCState(atcNO, true);
 
@@ -1671,6 +1684,7 @@ namespace Syscon_Solution.LSprogram
                             mission = Session_2_mission.Last().mission_;
 
                             PLC_Socket_Info[requiredID].SetSTATE(3);
+                            PLC_Socket_Info[requiredID].startATCNo = atcNO;
                             PLC_Socket_Info[startID].SetSTATE(3);
                             setATCState(atcNO, true);
 
@@ -1723,6 +1737,7 @@ namespace Syscon_Solution.LSprogram
                             mission = Session_2_mission.Last().mission_;
 
                             PLC_Socket_Info[requiredID].SetSTATE(3);
+                            PLC_Socket_Info[requiredID].startATCNo = atcNO;
                             PLC_Socket_Info[startID].SetSTATE(3);
                             setATCState(atcNO, true);
 
@@ -1871,6 +1886,7 @@ namespace Syscon_Solution.LSprogram
                     temp.mission_ = mission;
                     temp.startNode = Atc_node_check(atcNo);
                     PLC_Socket_Info[requiredID].SetSTATE(3);
+                    PLC_Socket_Info[requiredID].startATCNo = atcNo;
                     PLC_Socket_Info[startID].SetSTATE(3);
                     setATCState(atcNo, true);
                     Delay(500); ;
@@ -1919,6 +1935,7 @@ namespace Syscon_Solution.LSprogram
 
 
                     PLC_Socket_Info[requiredID].SetSTATE(3);
+                    PLC_Socket_Info[requiredID].startATCNo = atcNo;
                     PLC_Socket_Info[startID].SetSTATE(3);
                     setATCState(atcNo, true);
 
@@ -2458,7 +2475,7 @@ namespace Syscon_Solution.LSprogram
                     mission_temp_list.Add("GO_1_12");
                     mission_temp_list.Add("ABN_LINE_B_4");
                     dbBridge.onDBUpdate_Frommission(strrobotid, "ATC_4_2_wh", "ABN_LINE_B_4");
-                    DP_currentmission(strrobotid, "ABN_LINE_B_4");
+                    DP_currentmission(strrobotid, "ABN B 4_2");
 
                     Session_1_method(strrobotid, atcNO);
                 }
@@ -2470,7 +2487,7 @@ namespace Syscon_Solution.LSprogram
                     mission_temp_list.Add("GO_1_6");
                     mission_temp_list.Add("ABN_LINE_D_4");
                     dbBridge.onDBUpdate_Frommission(strrobotid, "ATC_4_2_wh", "ABN_LINE_D_4");
-                    DP_currentmission(strrobotid, "ABN_LINE_D_4");
+                    DP_currentmission(strrobotid, "ABN D 4_2");
 
                     Session_1_method(strrobotid, atcNO);
                 }
@@ -2617,22 +2634,13 @@ namespace Syscon_Solution.LSprogram
                 taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 4);
                 mission_temp_list.Add("TEMP_");
                 mission_temp_list.Add("ATC_1_wh");
-                mission_temp_list.Add("GO_1_6");
+                mission_temp_list.Add("GO_1_8");
                 mission_temp_list.Add("ABN_LINE_A_1");
                 dbBridge.onDBUpdate_Frommission(strrobotid, "ATC_1_wh", "ABN_LINE_A_1");
                 DP_currentmission(strrobotid, "ABN_LINE_A_1");
 
                 Session_1_method(strrobotid, atcNO);
             }
-
-        }
-
-
-
-        private void Go_step_1(string strrobotid)
-        {
-
-
 
         }
 
@@ -3123,31 +3131,6 @@ namespace Syscon_Solution.LSprogram
 
                         dbBridge.onDBUpdate_Frommission(strrobotid, "ATC_35_T", "EBN_LINE_B_35");
                         DP_currentmission(strrobotid, "EBN_LINE_B_35");
-
-                        mission_temp = new string[mission_temp_list.Count()];
-                        mission_temp = mission_temp_list.ToArray();
-                        int cnt = mission_temp.Count();
-
-                        taskoperationform.taskSave(atcNO, taskoperationform.ConvertString(mission_temp), strrobotid);
-
-                        mission_temp_list.Clear();
-                        dbBridge.onDBDelete_Missionlist("TEMP_");
-
-
-                        CrashCheckRobot_list.Add(strrobotid);
-                    }
-                    else if (requiredID == "192.168.102.21")
-                    {
-                        //ABN100C #2 LINE B ATC NUMBER : 35
-
-                        taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 15);
-                        mission_temp_list.Add("TEMP_");
-                        mission_temp_list.Add("ATC_35_T");
-                        mission_temp_list.Add("GO_12_6");
-                        mission_temp_list.Add("ABN_LINE_A_35");
-
-                        dbBridge.onDBUpdate_Frommission(strrobotid, "ATC_35_T", "ABN_LINE_A_35");
-                        DP_currentmission(strrobotid, "ABN_LINE_A_35");
 
                         mission_temp = new string[mission_temp_list.Count()];
                         mission_temp = mission_temp_list.ToArray();
@@ -3662,6 +3645,7 @@ namespace Syscon_Solution.LSprogram
                             {
 
                                 PLC_Socket_Info[resetPLC[strrobotid].requiredID].SetSTATE(0);
+                                PLC_Socket_Info[resetPLC[strrobotid].requiredID].startATCNo = "";
                                 PLC_Socket_Info[resetPLC[strrobotid].startID].SetSTATE(0);
                                 setATCState(resetPLC[strrobotid].atcNO, false);
                                 taskresult_dp(strrobotid, resetPLC[strrobotid].atcNO);
@@ -3689,6 +3673,7 @@ namespace Syscon_Solution.LSprogram
                                                 requiredID = Session_2_mission[i2].requiredID;
 
                                                 PLC_Socket_Info[requiredID].SetSTATE(3);
+                                                PLC_Socket_Info[requiredID].startATCNo = atcNO;
                                                 PLC_Socket_Info[startID].SetSTATE(3);
                                                 setATCState(atcNO, true);
 
@@ -3730,8 +3715,10 @@ namespace Syscon_Solution.LSprogram
                                                 dijkstra_in(start_node, 12);
                                                 taskoperationform.taskSave("99", "RETURN", strrobotid);
                                                 Thread.Sleep(10);
+                                                
                                                 dbBridge.onDBDelete_Missionlist("RETURN");
                                                 dbBridge.onDBDelete_Task("RETURN");
+                                                checkbRun(strrobotid);
                                                 //checkbRun(strrobotid);
                                             }
                                             else if (start_node == 12)
@@ -3868,6 +3855,7 @@ namespace Syscon_Solution.LSprogram
                     taskresult_dp(strrobotid, resetPLC[strrobotid].atcNO, "FAIL");
                     DP_currentmission(strrobotid, "FAIL");  
                     PLC_Socket_Info[resetPLC[strrobotid].requiredID].SetSTATE(0);
+                    PLC_Socket_Info[resetPLC[strrobotid].requiredID].startATCNo = "";
                     PLC_Socket_Info[resetPLC[strrobotid].startID].SetSTATE(0);
                     setATCState(resetPLC[strrobotid].atcNO, false);
 

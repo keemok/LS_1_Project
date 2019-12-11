@@ -1567,7 +1567,7 @@ namespace Syscon_Solution
             }
 
         }
-
+        public string startATCNo = "";
         public void checkCondition(string requiedID, string atcNo)
         {
             if (GROUP == GROUP_ABN100_1 || GROUP == GROUP_ABN100_2 || GROUP == GROUP_ABN100_3 || GROUP == GROUP_ABN100_4)
@@ -1617,15 +1617,16 @@ namespace Syscon_Solution
                     {
                         if (m7102 == true)
                         {
-
                             addATCNoState("5_1", m7102);
                             scenarioStart_Evt(requiedID, HOST, "m7102", "5_1");
+                            startATCNo = "5_1";
                         }
                         else if (m7103 == true)
                         {
 
                             addATCNoState("5_2", m7103);
                             scenarioStart_Evt(requiedID, HOST, "m7103", "5_2");
+                            startATCNo = "5_2";
                         }
                     }
                     if (atcNo == "6")
@@ -1634,11 +1635,13 @@ namespace Syscon_Solution
                         {
                             addATCNoState("6_1", m7105);
                             scenarioStart_Evt(requiedID, HOST, "m7105", "6_1");
+                            startATCNo = "6_1";
                         }
                         else if (m7106 == true)
                         {
                             addATCNoState("6_2", m7106);
                             scenarioStart_Evt(requiedID, HOST, "m7106", "6_2");
+                            startATCNo = "6_2";
                         }
                     }
                     if (atcNo == "4")
@@ -1647,11 +1650,13 @@ namespace Syscon_Solution
                         {
                             addATCNoState("4_1", m7108);
                             scenarioStart_Evt(requiedID, HOST, "m7108", "4_1");
+                            startATCNo = "4_1";
                         }
                         else if (m7109 == true)
                         {
                             addATCNoState("4_2", m7109);
                             scenarioStart_Evt(requiedID, HOST, "m7109", "4_2");
+                            startATCNo = "4_2";
                         }
                     }
                     if (atcNo == "3")
@@ -1660,11 +1665,13 @@ namespace Syscon_Solution
                         {
                             addATCNoState("3_1", m7111);
                             scenarioStart_Evt(requiedID, HOST, "m7111", "3_1");
+                            startATCNo = "3_1";
                         }
                         else if (m7112 == true)
                         {
                             addATCNoState("3_2", m7112);
                             scenarioStart_Evt(requiedID, HOST, "m7112", "3_2");
+                            startATCNo = "3_2";
                         }
                     }
                 }
@@ -1859,6 +1866,32 @@ namespace Syscon_Solution
             //}
             return false;
         }
+
+        private bool getIsValidGroup(string group)
+        {
+            bool _isValidGroup = false;
+
+            if(group == GROUP_ABN100_1 || group == GROUP_ABN100_2 || group == GROUP_ABN100_3 || group == GROUP_ABN100_4)
+            {
+                if (GROUP == GROUP_ABN100_1 || GROUP == GROUP_ABN100_2 || GROUP == GROUP_ABN100_3 || GROUP == GROUP_ABN100_4)
+                {
+                    _isValidGroup = false;
+                }
+                else
+                {
+                    _isValidGroup = true;
+                }
+            }
+            else if(GROUP != group)
+            {
+                _isValidGroup = true;
+            }
+
+
+
+            return _isValidGroup;
+        }
+
         /// <summary>
         /// atcNo 에 해당하는 LS_Socket클래스 반환
         /// </summary>
@@ -1866,7 +1899,7 @@ namespace Syscon_Solution
         /// <returns></returns>
         public LS_Socket getSocketFromATCNo(string group, string atcNo)
         {
-            if (GROUP != group)
+            if (getIsValidGroup(group))
             {
 
                 if (atcNo == "4" || atcNo == "5" || atcNo == "6" || atcNo == "3")
@@ -1962,6 +1995,10 @@ namespace Syscon_Solution
         {
             //if (STATE_PRE == state.REQUIRE)
             //    ATCState_Evt(HOST,atcNo, false);
+            if(atcNo == "3" || atcNo == "4" || atcNo == "5" || atcNo == "6")
+            {
+                if(startATCNo != "")atcNo = startATCNo;
+            }
             ATCState_Evt(HOST, atcNo, false);
             SetSTATE(0);
             ATCNoState.Remove(atcNo);

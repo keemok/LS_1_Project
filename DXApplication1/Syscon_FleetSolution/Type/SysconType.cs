@@ -778,7 +778,11 @@ namespace Syscon_Solution
         public string work;
     }
 
-
+    public class ATC_
+    {
+        public PointF pointf;
+        public string atc_name;
+    }
     public class MissionList
     {
         public string missionID; // 실제 db 미션 ID

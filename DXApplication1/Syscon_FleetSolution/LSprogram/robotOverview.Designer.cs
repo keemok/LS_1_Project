@@ -97,14 +97,17 @@
             this.robot1Panel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gaugeControl3 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge3 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot1Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge2 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot1Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl1 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge1 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot1Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot1Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -122,14 +125,17 @@
             this.robot2Panel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gaugeControl4 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge4 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot2Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent4 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent4 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl5 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge5 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot2Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl6 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge6 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot2Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot2Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent6 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -148,14 +154,17 @@
             this.label22 = new System.Windows.Forms.Label();
             this.robot3Panel = new System.Windows.Forms.Panel();
             this.gaugeControl7 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge7 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot3Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent7 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent7 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl8 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge8 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot3Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent8 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent8 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl9 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge9 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot3Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot3Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent9 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -172,14 +181,17 @@
             this.label33 = new System.Windows.Forms.Label();
             this.robot4Panel = new System.Windows.Forms.Panel();
             this.gaugeControl10 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge10 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot4Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent10 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent10 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl11 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge11 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot4Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent11 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent11 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl12 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge12 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot4Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot4Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent12 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -196,14 +208,17 @@
             this.label44 = new System.Windows.Forms.Label();
             this.robot5Panel = new System.Windows.Forms.Panel();
             this.gaugeControl13 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge13 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot5Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent13 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent13 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl14 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge14 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot5Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent14 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent14 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl15 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge15 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot5Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot5Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent15 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -220,14 +235,17 @@
             this.label55 = new System.Windows.Forms.Label();
             this.robot6Panel = new System.Windows.Forms.Panel();
             this.gaugeControl16 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge16 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot6Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent16 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent16 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl17 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge17 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot6Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent17 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent17 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl18 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge18 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot6Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot6Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent18 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -244,14 +262,17 @@
             this.label66 = new System.Windows.Forms.Label();
             this.robot7Panel = new System.Windows.Forms.Panel();
             this.gaugeControl19 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge19 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot7Ampare = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent19 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent19 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl20 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge20 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot7Volt = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent20 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent20 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl21 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.circularGauge21 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot7Battery = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.robot7Batteryscale = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.arcScaleComponent21 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
@@ -266,123 +287,99 @@
             this.robot7State = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.circularGauge10 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge11 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge12 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge7 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge8 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge9 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge4 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge5 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge6 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge19 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge20 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge21 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge16 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge17 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge18 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge13 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge14 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge15 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge3 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge2 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.circularGauge1 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.robot1Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).BeginInit();
             this.robot2Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent6)).BeginInit();
             this.robot3Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent9)).BeginInit();
             this.robot4Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent12)).BeginInit();
             this.robot5Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent15)).BeginInit();
             this.robot6Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent18)).BeginInit();
             this.robot7Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Ampare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Volt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Battery)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Batteryscale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -453,6 +450,17 @@
             this.gaugeControl3.Name = "gaugeControl3";
             this.gaugeControl3.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl3.TabIndex = 3;
+            // 
+            // circularGauge3
+            // 
+            this.circularGauge3.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge3.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot1Ampare});
+            this.circularGauge3.Name = "circularGauge3";
+            this.circularGauge3.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent3});
+            this.circularGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent3});
             // 
             // robot1Ampare
             // 
@@ -530,6 +538,17 @@
             this.gaugeControl2.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl2.TabIndex = 3;
             // 
+            // circularGauge2
+            // 
+            this.circularGauge2.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge2.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot1Volt});
+            this.circularGauge2.Name = "circularGauge2";
+            this.circularGauge2.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent2});
+            this.circularGauge2.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent2});
+            // 
             // robot1Volt
             // 
             this.robot1Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -603,6 +622,17 @@
             this.gaugeControl1.Name = "gaugeControl1";
             this.gaugeControl1.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl1.TabIndex = 3;
+            // 
+            // circularGauge1
+            // 
+            this.circularGauge1.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge1.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot1Battery});
+            this.circularGauge1.Name = "circularGauge1";
+            this.circularGauge1.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot1Batteryscale});
+            this.circularGauge1.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent1});
             // 
             // robot1Battery
             // 
@@ -831,6 +861,17 @@
             this.gaugeControl4.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl4.TabIndex = 3;
             // 
+            // circularGauge4
+            // 
+            this.circularGauge4.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge4.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot2Ampare});
+            this.circularGauge4.Name = "circularGauge4";
+            this.circularGauge4.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent4});
+            this.circularGauge4.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent4});
+            // 
             // robot2Ampare
             // 
             this.robot2Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -907,6 +948,17 @@
             this.gaugeControl5.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl5.TabIndex = 3;
             // 
+            // circularGauge5
+            // 
+            this.circularGauge5.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge5.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot2Volt});
+            this.circularGauge5.Name = "circularGauge5";
+            this.circularGauge5.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent5});
+            this.circularGauge5.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent5});
+            // 
             // robot2Volt
             // 
             this.robot2Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -980,6 +1032,17 @@
             this.gaugeControl6.Name = "gaugeControl6";
             this.gaugeControl6.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl6.TabIndex = 3;
+            // 
+            // circularGauge6
+            // 
+            this.circularGauge6.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge6.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot2Battery});
+            this.circularGauge6.Name = "circularGauge6";
+            this.circularGauge6.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot2Batteryscale});
+            this.circularGauge6.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent6});
             // 
             // robot2Battery
             // 
@@ -1214,6 +1277,17 @@
             this.gaugeControl7.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl7.TabIndex = 3;
             // 
+            // circularGauge7
+            // 
+            this.circularGauge7.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge7.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot3Ampare});
+            this.circularGauge7.Name = "circularGauge7";
+            this.circularGauge7.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent7});
+            this.circularGauge7.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent7});
+            // 
             // robot3Ampare
             // 
             this.robot3Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1290,6 +1364,17 @@
             this.gaugeControl8.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl8.TabIndex = 3;
             // 
+            // circularGauge8
+            // 
+            this.circularGauge8.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge8.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot3Volt});
+            this.circularGauge8.Name = "circularGauge8";
+            this.circularGauge8.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent8});
+            this.circularGauge8.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent8});
+            // 
             // robot3Volt
             // 
             this.robot3Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1363,6 +1448,17 @@
             this.gaugeControl9.Name = "gaugeControl9";
             this.gaugeControl9.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl9.TabIndex = 3;
+            // 
+            // circularGauge9
+            // 
+            this.circularGauge9.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge9.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot3Battery});
+            this.circularGauge9.Name = "circularGauge9";
+            this.circularGauge9.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot3Batteryscale});
+            this.circularGauge9.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent9});
             // 
             // robot3Battery
             // 
@@ -1575,6 +1671,17 @@
             this.gaugeControl10.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl10.TabIndex = 3;
             // 
+            // circularGauge10
+            // 
+            this.circularGauge10.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge10.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot4Ampare});
+            this.circularGauge10.Name = "circularGauge10";
+            this.circularGauge10.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent10});
+            this.circularGauge10.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent10});
+            // 
             // robot4Ampare
             // 
             this.robot4Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1651,6 +1758,17 @@
             this.gaugeControl11.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl11.TabIndex = 3;
             // 
+            // circularGauge11
+            // 
+            this.circularGauge11.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge11.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot4Volt});
+            this.circularGauge11.Name = "circularGauge11";
+            this.circularGauge11.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent11});
+            this.circularGauge11.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent11});
+            // 
             // robot4Volt
             // 
             this.robot4Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1724,6 +1842,17 @@
             this.gaugeControl12.Name = "gaugeControl12";
             this.gaugeControl12.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl12.TabIndex = 3;
+            // 
+            // circularGauge12
+            // 
+            this.circularGauge12.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge12.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot4Battery});
+            this.circularGauge12.Name = "circularGauge12";
+            this.circularGauge12.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot4Batteryscale});
+            this.circularGauge12.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent12});
             // 
             // robot4Battery
             // 
@@ -1936,6 +2065,17 @@
             this.gaugeControl13.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl13.TabIndex = 3;
             // 
+            // circularGauge13
+            // 
+            this.circularGauge13.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge13.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot5Ampare});
+            this.circularGauge13.Name = "circularGauge13";
+            this.circularGauge13.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent13});
+            this.circularGauge13.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent13});
+            // 
             // robot5Ampare
             // 
             this.robot5Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2012,6 +2152,17 @@
             this.gaugeControl14.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl14.TabIndex = 3;
             // 
+            // circularGauge14
+            // 
+            this.circularGauge14.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge14.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot5Volt});
+            this.circularGauge14.Name = "circularGauge14";
+            this.circularGauge14.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent14});
+            this.circularGauge14.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent14});
+            // 
             // robot5Volt
             // 
             this.robot5Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2085,6 +2236,17 @@
             this.gaugeControl15.Name = "gaugeControl15";
             this.gaugeControl15.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl15.TabIndex = 3;
+            // 
+            // circularGauge15
+            // 
+            this.circularGauge15.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge15.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot5Battery});
+            this.circularGauge15.Name = "circularGauge15";
+            this.circularGauge15.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot5Batteryscale});
+            this.circularGauge15.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent15});
             // 
             // robot5Battery
             // 
@@ -2297,6 +2459,17 @@
             this.gaugeControl16.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl16.TabIndex = 3;
             // 
+            // circularGauge16
+            // 
+            this.circularGauge16.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge16.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot6Ampare});
+            this.circularGauge16.Name = "circularGauge16";
+            this.circularGauge16.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent16});
+            this.circularGauge16.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent16});
+            // 
             // robot6Ampare
             // 
             this.robot6Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2373,6 +2546,17 @@
             this.gaugeControl17.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl17.TabIndex = 3;
             // 
+            // circularGauge17
+            // 
+            this.circularGauge17.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge17.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot6Volt});
+            this.circularGauge17.Name = "circularGauge17";
+            this.circularGauge17.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent17});
+            this.circularGauge17.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent17});
+            // 
             // robot6Volt
             // 
             this.robot6Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2446,6 +2630,17 @@
             this.gaugeControl18.Name = "gaugeControl18";
             this.gaugeControl18.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl18.TabIndex = 3;
+            // 
+            // circularGauge18
+            // 
+            this.circularGauge18.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge18.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot6Battery});
+            this.circularGauge18.Name = "circularGauge18";
+            this.circularGauge18.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot6Batteryscale});
+            this.circularGauge18.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent18});
             // 
             // robot6Battery
             // 
@@ -2658,6 +2853,17 @@
             this.gaugeControl19.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl19.TabIndex = 3;
             // 
+            // circularGauge19
+            // 
+            this.circularGauge19.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge19.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot7Ampare});
+            this.circularGauge19.Name = "circularGauge19";
+            this.circularGauge19.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent19});
+            this.circularGauge19.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent19});
+            // 
             // robot7Ampare
             // 
             this.robot7Ampare.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2734,6 +2940,17 @@
             this.gaugeControl20.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl20.TabIndex = 3;
             // 
+            // circularGauge20
+            // 
+            this.circularGauge20.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge20.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot7Volt});
+            this.circularGauge20.Name = "circularGauge20";
+            this.circularGauge20.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent20});
+            this.circularGauge20.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent20});
+            // 
             // robot7Volt
             // 
             this.robot7Volt.AppearanceText.Font = new System.Drawing.Font("DX국민시대", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2807,6 +3024,17 @@
             this.gaugeControl21.Name = "gaugeControl21";
             this.gaugeControl21.Size = new System.Drawing.Size(124, 124);
             this.gaugeControl21.TabIndex = 3;
+            // 
+            // circularGauge21
+            // 
+            this.circularGauge21.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
+            this.circularGauge21.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.robot7Battery});
+            this.circularGauge21.Name = "circularGauge21";
+            this.circularGauge21.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.robot7Batteryscale});
+            this.circularGauge21.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.arcScaleComponent21});
             // 
             // robot7Battery
             // 
@@ -2983,269 +3211,11 @@
             this.label77.TabIndex = 0;
             this.label77.Text = "7";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(953, 823);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(953, 771);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(953, 862);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 2;
-            // 
-            // circularGauge10
-            // 
-            this.circularGauge10.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge10.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot4Ampare});
-            this.circularGauge10.Name = "circularGauge10";
-            this.circularGauge10.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent10});
-            this.circularGauge10.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent10});
-            // 
-            // circularGauge11
-            // 
-            this.circularGauge11.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge11.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot4Volt});
-            this.circularGauge11.Name = "circularGauge11";
-            this.circularGauge11.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent11});
-            this.circularGauge11.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent11});
-            // 
-            // circularGauge12
-            // 
-            this.circularGauge12.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge12.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot4Battery});
-            this.circularGauge12.Name = "circularGauge12";
-            this.circularGauge12.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot4Batteryscale});
-            this.circularGauge12.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent12});
-            // 
-            // circularGauge7
-            // 
-            this.circularGauge7.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge7.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot3Ampare});
-            this.circularGauge7.Name = "circularGauge7";
-            this.circularGauge7.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent7});
-            this.circularGauge7.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent7});
-            // 
-            // circularGauge8
-            // 
-            this.circularGauge8.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge8.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot3Volt});
-            this.circularGauge8.Name = "circularGauge8";
-            this.circularGauge8.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent8});
-            this.circularGauge8.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent8});
-            // 
-            // circularGauge9
-            // 
-            this.circularGauge9.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge9.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot3Battery});
-            this.circularGauge9.Name = "circularGauge9";
-            this.circularGauge9.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot3Batteryscale});
-            this.circularGauge9.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent9});
-            // 
-            // circularGauge4
-            // 
-            this.circularGauge4.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge4.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot2Ampare});
-            this.circularGauge4.Name = "circularGauge4";
-            this.circularGauge4.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent4});
-            this.circularGauge4.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent4});
-            // 
-            // circularGauge5
-            // 
-            this.circularGauge5.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge5.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot2Volt});
-            this.circularGauge5.Name = "circularGauge5";
-            this.circularGauge5.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent5});
-            this.circularGauge5.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent5});
-            // 
-            // circularGauge6
-            // 
-            this.circularGauge6.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge6.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot2Battery});
-            this.circularGauge6.Name = "circularGauge6";
-            this.circularGauge6.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot2Batteryscale});
-            this.circularGauge6.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent6});
-            // 
-            // circularGauge19
-            // 
-            this.circularGauge19.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge19.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot7Ampare});
-            this.circularGauge19.Name = "circularGauge19";
-            this.circularGauge19.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent19});
-            this.circularGauge19.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent19});
-            // 
-            // circularGauge20
-            // 
-            this.circularGauge20.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge20.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot7Volt});
-            this.circularGauge20.Name = "circularGauge20";
-            this.circularGauge20.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent20});
-            this.circularGauge20.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent20});
-            // 
-            // circularGauge21
-            // 
-            this.circularGauge21.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge21.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot7Battery});
-            this.circularGauge21.Name = "circularGauge21";
-            this.circularGauge21.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot7Batteryscale});
-            this.circularGauge21.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent21});
-            // 
-            // circularGauge16
-            // 
-            this.circularGauge16.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge16.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot6Ampare});
-            this.circularGauge16.Name = "circularGauge16";
-            this.circularGauge16.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent16});
-            this.circularGauge16.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent16});
-            // 
-            // circularGauge17
-            // 
-            this.circularGauge17.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge17.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot6Volt});
-            this.circularGauge17.Name = "circularGauge17";
-            this.circularGauge17.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent17});
-            this.circularGauge17.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent17});
-            // 
-            // circularGauge18
-            // 
-            this.circularGauge18.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge18.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot6Battery});
-            this.circularGauge18.Name = "circularGauge18";
-            this.circularGauge18.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot6Batteryscale});
-            this.circularGauge18.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent18});
-            // 
-            // circularGauge13
-            // 
-            this.circularGauge13.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge13.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot5Ampare});
-            this.circularGauge13.Name = "circularGauge13";
-            this.circularGauge13.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent13});
-            this.circularGauge13.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent13});
-            // 
-            // circularGauge14
-            // 
-            this.circularGauge14.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge14.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot5Volt});
-            this.circularGauge14.Name = "circularGauge14";
-            this.circularGauge14.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent14});
-            this.circularGauge14.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent14});
-            // 
-            // circularGauge15
-            // 
-            this.circularGauge15.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge15.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot5Battery});
-            this.circularGauge15.Name = "circularGauge15";
-            this.circularGauge15.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot5Batteryscale});
-            this.circularGauge15.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent15});
-            // 
-            // circularGauge3
-            // 
-            this.circularGauge3.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge3.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot1Ampare});
-            this.circularGauge3.Name = "circularGauge3";
-            this.circularGauge3.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent3});
-            this.circularGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent3});
-            // 
-            // circularGauge2
-            // 
-            this.circularGauge2.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge2.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot1Volt});
-            this.circularGauge2.Name = "circularGauge2";
-            this.circularGauge2.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent2});
-            this.circularGauge2.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent2});
-            // 
-            // circularGauge1
-            // 
-            this.circularGauge1.Bounds = new System.Drawing.Rectangle(0, 0, 124, 124);
-            this.circularGauge1.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.robot1Battery});
-            this.circularGauge1.Name = "circularGauge1";
-            this.circularGauge1.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.robot1Batteryscale});
-            this.circularGauge1.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.arcScaleComponent1});
-            // 
             // robotOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.robot4Panel);
             this.Controls.Add(this.robot3Panel);
             this.Controls.Add(this.robot2Panel);
@@ -3258,105 +3228,104 @@
             this.robot1Panel.ResumeLayout(false);
             this.robot1Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot1Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent1)).EndInit();
             this.robot2Panel.ResumeLayout(false);
             this.robot2Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot2Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent6)).EndInit();
             this.robot3Panel.ResumeLayout(false);
             this.robot3Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot3Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent9)).EndInit();
             this.robot4Panel.ResumeLayout(false);
             this.robot4Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot4Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent12)).EndInit();
             this.robot5Panel.ResumeLayout(false);
             this.robot5Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot5Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent15)).EndInit();
             this.robot6Panel.ResumeLayout(false);
             this.robot6Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot6Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent18)).EndInit();
             this.robot7Panel.ResumeLayout(false);
             this.robot7Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Ampare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Volt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Battery)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.robot7Batteryscale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleComponent21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -3557,8 +3526,5 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }

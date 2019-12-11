@@ -499,18 +499,24 @@ namespace Syscon_Solution.LSprogram
         {
         }
 
-        class ATC_
-        {
-            public PointF pointf;
-            public string atc_name;
-        }
+
 
         private void button6_Click(object sender, EventArgs e)
         {
             save_conv();
         }
 
-        List<  ATC_> save = new List<ATC_>();
+        private void button7_Click(object sender, EventArgs e)
+        {
+            onRead_conv();
+        }
+
+        
+        private void onRead_conv()
+        {
+            mainform.dbBridge.onDBRead_conveyor();
+        }
+        List<ATC_> save = new List<ATC_>();
 
         private void timer1_Tick(object sender, EventArgs e)
         {

@@ -63,17 +63,7 @@ namespace Syscon_Solution.FleetManager.DB
                 // MessageBox.Show("onDBDelete_Missionlist err" + ex2.Message.ToString());
             }
         }
-        public void onDBnodearea_load()
-        {
-            try
-            {
 
-            }
-            catch
-            {
-
-            }
-        }
         public void onDBAtcconv_insert(string data)
         {
             try
@@ -143,12 +133,12 @@ namespace Syscon_Solution.FleetManager.DB
                 if (!File.Exists(m_strRIDiS_DBConnectionPath))
                 {
                     using (StreamWriter sw = new System.IO.StreamWriter(m_strRIDiS_DBConnectionPath, false, Encoding.Default))
-                    {
+                {
 
-                        sw.WriteLine("data source=192.168.20.28; database=ridis_db; user id=syscon; password=r023866677!; charset=utf8");
-                        sw.Close();
-                    }
+                    sw.WriteLine("data source=192.168.20.28; database=ridis_db; user id=syscon; password=r023866677!; charset=utf8");
+                    sw.Close();
                 }
+            }
 
                 using (StreamReader sr1 = new System.IO.StreamReader(m_strRIDiS_DBConnectionPath, Encoding.Default))
                 {
@@ -304,7 +294,34 @@ namespace Syscon_Solution.FleetManager.DB
                 Console.Out.WriteLine("onDBRead_Robotlist err :={0}", ex2.Message.ToString());
             }
         }
+        public void onDBRead_conveyor()
+        {
+            string sql = "";
 
+            try
+            {
+                sql = string.Format("SELECT * FROM etc_info_conv");
+
+                DataSet ds = new DataSet();
+                MySqlDataAdapter da = new MySqlDataAdapter(sql, Data.Instance.G_DynaSqlCon);
+                da.Fill(ds);
+                int count = ds.Tables[0].Rows.Count;
+
+                ATC_ temp;
+                for (int i = 0; i < count; i++)
+                {
+                    temp = new ATC_();
+                    string pointdata = ds.Tables[0].Rows[i]["pointdata"].ToString();
+                    temp = JsonConvert.DeserializeObject<ATC_>(pointdata);
+                    Data.Instance.conveyor_location.Add(temp);
+                }
+                
+            }
+            catch
+            {
+                Console.WriteLine("ondbread actinfo error");
+            }
+        }
         public void onDBRead_ACTinfo()
         {
             string sql = "";

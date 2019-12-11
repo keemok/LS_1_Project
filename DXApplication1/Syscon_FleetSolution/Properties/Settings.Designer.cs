@@ -22,5 +22,89 @@ namespace Syscon_Solution.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string R_001 {
+            get {
+                return ((string)(this["R_001"]));
+            }
+            set {
+                this["R_001"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_002 {
+            get {
+                return ((string)(this["R_002"]));
+            }
+            set {
+                this["R_002"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_003 {
+            get {
+                return ((string)(this["R_003"]));
+            }
+            set {
+                this["R_003"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_004 {
+            get {
+                return ((string)(this["R_004"]));
+            }
+            set {
+                this["R_004"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_005 {
+            get {
+                return ((string)(this["R_005"]));
+            }
+            set {
+                this["R_005"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_006 {
+            get {
+                return ((string)(this["R_006"]));
+            }
+            set {
+                this["R_006"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string R_007 {
+            get {
+                return ((string)(this["R_007"]));
+            }
+            set {
+                this["R_007"] = value;
+            }
+        }
     }
 }

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysSolution", "SysSolution\SysSolution.csproj", "{2F19F668-B26F-4A09-8FF9-1485D34438F3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rosbridge_interface", "rosbridge_interface\rosbridge_interface.csproj", "{250E9E04-A425-4DC8-A5BE-847987BE38C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rosbridge_client_common", "rosbridge_client_common\rosbridge_client_common.csproj", "{7167262B-09B1-435B-AC01-6A3F94449C72}"
@@ -41,54 +39,6 @@ Global
 		workorder_release|Any CPU = workorder_release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}._delivery_debug|Any CPU.ActiveCfg = _delivery|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}._delivery_debug|Any CPU.Build.0 = _delivery|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}._delivery_release|Any CPU.ActiveCfg = _delivery_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}._delivery_release|Any CPU.Build.0 = _delivery_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Debug_mapping|Any CPU.ActiveCfg = Debug_mapping|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Debug_mapping|Any CPU.Build.0 = Debug_mapping|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_debug|Any CPU.ActiveCfg = fleet_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_debug|Any CPU.Build.0 = fleet_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_demo_debug|Any CPU.ActiveCfg = fleet_demo_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_demo_debug|Any CPU.Build.0 = fleet_demo_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_demo_release|Any CPU.ActiveCfg = fleet_demo_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_demo_release|Any CPU.Build.0 = fleet_demo_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_release|Any CPU.ActiveCfg = fleet_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.fleet_release|Any CPU.Build.0 = fleet_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.JobHistory_debug|Any CPU.ActiveCfg = JobHistory_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.JobHistory_debug|Any CPU.Build.0 = JobHistory_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.JobHistory_release|Any CPU.ActiveCfg = JobHistory_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.JobHistory_release|Any CPU.Build.0 = JobHistory_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Map_debug|Any CPU.ActiveCfg = Map_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Map_debug|Any CPU.Build.0 = Map_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Map_release|Any CPU.ActiveCfg = Map_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Map_release|Any CPU.Build.0 = Map_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Release_mapping|Any CPU.ActiveCfg = Release_mapping|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Release_mapping|Any CPU.Build.0 = Release_mapping|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatus_debug|Any CPU.ActiveCfg = robotstatus_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatus_debug|Any CPU.Build.0 = robotstatus_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatus_release|Any CPU.ActiveCfg = robotstatus_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatus_release|Any CPU.Build.0 = robotstatus_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatusOne_debug|Any CPU.ActiveCfg = robotstatusOne_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatusOne_debug|Any CPU.Build.0 = robotstatusOne_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatusOne_release|Any CPU.ActiveCfg = robotstatusOne_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.robotstatusOne_release|Any CPU.Build.0 = robotstatusOne_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.solution_debug|Any CPU.ActiveCfg = solution_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.solution_debug|Any CPU.Build.0 = solution_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.solution_release|Any CPU.ActiveCfg = solution_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.solution_release|Any CPU.Build.0 = solution_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.UR_Test_debug|Any CPU.ActiveCfg = UR_Test|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.UR_Test_debug|Any CPU.Build.0 = UR_Test|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.UR_Test_release|Any CPU.ActiveCfg = UR_Test_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.UR_Test_release|Any CPU.Build.0 = UR_Test_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.workorder_debug|Any CPU.ActiveCfg = workorder_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.workorder_debug|Any CPU.Build.0 = workorder_debug|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.workorder_release|Any CPU.ActiveCfg = workorder_release|Any CPU
-		{2F19F668-B26F-4A09-8FF9-1485D34438F3}.workorder_release|Any CPU.Build.0 = workorder_release|Any CPU
 		{250E9E04-A425-4DC8-A5BE-847987BE38C6}._delivery_debug|Any CPU.ActiveCfg = _delivery|Any CPU
 		{250E9E04-A425-4DC8-A5BE-847987BE38C6}._delivery_debug|Any CPU.Build.0 = _delivery|Any CPU
 		{250E9E04-A425-4DC8-A5BE-847987BE38C6}._delivery_release|Any CPU.ActiveCfg = _delivery_release|Any CPU

@@ -142,6 +142,8 @@ namespace Syscon_Solution
         #endregion 
 
 
+        public List<ATC_> conveyor_location = new List<ATC_>();
+
         public Dictionary<string, MissionList> mission_list = new Dictionary<string, MissionList>();
 
 
@@ -162,7 +164,6 @@ namespace Syscon_Solution
         public Dictionary<string, WaitingPos_RobotInfo> waitingpos_RobotsInfo = new Dictionary<string, WaitingPos_RobotInfo>();
         public Dictionary<string, JobPos_RobotInfo> jobos_robotsInfo = new Dictionary<string, JobPos_RobotInfo>();
         public MissionList_Table missionlist_table = new MissionList_Table();
-
 
         public Dictionary<string, Node_mission> node_mission_list = new Dictionary<string, Node_mission>();
         public Dictionary<string, Docking_mission> docking_mission_list = new Dictionary<string, Docking_mission>();
