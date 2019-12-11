@@ -20,7 +20,7 @@ namespace Syscon_Solution.LSprogram
             InitializeComponent();
         }
         mainForm mainform;
-        private float Wheelratio = (float)0.33;
+        private float Wheelratio = (float)1;
         private Point clickPoint;
         private Point imgPoint;
         private Rectangle imgRect;
@@ -34,7 +34,7 @@ namespace Syscon_Solution.LSprogram
             pictureBox1.MouseWheel += new MouseEventHandler(picturebox_Wheel);
             imgPoint = new Point(pictureBox1.Width / 2, pictureBox1.Height / 2);
             imgRect = new Rectangle(0, 0, pictureBox1.Width, pictureBox1.Height);
-            Wheelratio = (float)0.33;
+            Wheelratio = (float)1;
             clickPoint = imgPoint;
         }
 
@@ -42,7 +42,7 @@ namespace Syscon_Solution.LSprogram
         {
             int lines = e.Delta * SystemInformation.MouseWheelScrollLines / 120;
             PictureBox pb = (PictureBox)sender;
-            /*
+            
             if (lines > 0)
             {
                 Wheelratio *= 1.1F;
@@ -53,7 +53,7 @@ namespace Syscon_Solution.LSprogram
                 Wheelratio *= 0.9F;
                 //if (Wheelratio < 1) Wheelratio = 1;
             }
-            */
+            
             //imgRect.Width = (int)Math.Round(imgRect.Width * ratio);
             //imgRect.Height = (int)Math.Round(imgRect.Height * ratio);
             //imgRect.X = (int)Math.Round(pb.Width / 2 - imgPoint.X * ratio);
@@ -105,10 +105,9 @@ namespace Syscon_Solution.LSprogram
         float dOrignX = 0;
         float dOrignY = 0;
         int x, y;
-        float ori_x;
-        float ori_y;
-
-        float resolution;
+        float ori_x= (float)10.2549853515625;
+        float ori_y= (float)19.7270654296875;
+        float resolution= (float)0.019999999552965164;
 
         MySqlConnection conn;
         MapState mapstate = new MapState();
@@ -230,6 +229,7 @@ namespace Syscon_Solution.LSprogram
                         g.DrawEllipse(bb, aa[i].X-1, aa[i].Y-1, 2, 2);
                     }
                 }
+                Paint_conveyor();
                 if (mainform.node_area_.Count() > 0)
                 {
 
@@ -432,7 +432,7 @@ namespace Syscon_Solution.LSprogram
             float currXpos = (float)(((e.X - dOrignX) * resolution)) / Wheelratio;
             float currYpos = (float)(((e.Y - dOrignY) * resolution)) / Wheelratio;
             temp.X = currXpos;
-            temp.Y = currYpos;
+            temp.Y = currYpos*-1;
 
             string temp_name = "";
             ATC_ atc_temp = new ATC_();
@@ -469,26 +469,26 @@ namespace Syscon_Solution.LSprogram
             for (int i = 0; i < mainform.node_area_.Count(); i++)
             {
 
-                //RectangleF wariningregion = new RectangleF();
-                //wariningregion = mainform.node_area_[i];
-                //float wx = wariningregion.X;
-                //float wy = wariningregion.Y;
-                //float wx2 = wariningregion.Width;
-                //float wy2 = wariningregion.Height;
+                RectangleF wariningregion = new RectangleF();
+                wariningregion = mainform.node_area_[i];
+                float wx = wariningregion.X;
+                float wy = wariningregion.Y;
+                float wx2 = wariningregion.Width;
+                float wy2 = wariningregion.Height;
 
-                //float cellX = wx / resolution;
-                //float cellY = wy / resolution;
+                float cellX = wx / resolution;
+                float cellY = wy / resolution;
 
-                //float cellX2 = wx2 / resolution;
-                //float cellY2 = wy2 / resolution;
+                float cellX2 = wx2 / resolution;
+                float cellY2 = wy2 / resolution;
 
-                //PointF pos = new PointF();
-                //pos.X = dOrignX + cellX * Wheelratio;
-                //pos.Y = dOrignY - cellY * Wheelratio;
+                PointF pos = new PointF();
+                pos.X = dOrignX + cellX * Wheelratio;
+                pos.Y = dOrignY - cellY * Wheelratio;
 
-                //PointF pos2 = new PointF();
-                //pos2.X = dOrignX + cellX2 * Wheelratio;
-                //pos2.Y = dOrignY - cellY2 * Wheelratio;
+                PointF pos2 = new PointF();
+                pos2.X = dOrignX + cellX2 * Wheelratio;
+                pos2.Y = dOrignY - cellY2 * Wheelratio;
 
                 g.DrawRectangle(pen4, mainform.node_area_[i].X, mainform.node_area_[i].Y, mainform.node_area_[i].Width, mainform.node_area_[i].Height);
             }
@@ -508,14 +508,87 @@ namespace Syscon_Solution.LSprogram
 
         private void button7_Click(object sender, EventArgs e)
         {
-            onRead_conv();
+            
+                onRead_conv();
+            Paint_conveyor();
+            
+            
+
         }
 
+        List<Label> label= new List<Label>();
+        private void Paint_conveyor()
+        {
+            PictureBox PB = pictureBox1;
+            int cnt = Data.Instance.conveyor_location.Count;
+
+            dOrignX = ((ori_x * -1) / resolution);
+            dOrignY = ((ori_y) / resolution);
+
+            if (dOrignY < 0) dOrignY *= -1;
+            dOrignY = img.Height - dOrignY;
+
+            dOrignX = dOrignX * (float)Wheelratio;
+            dOrignY = dOrignY * (float)Wheelratio;
+
+            Label temp;
+            PB.Controls.Clear();
+            for (int i = 0; i < cnt; i++)
+            {
+                
+                temp = new Label();
+                
+                float labelX = Data.Instance.conveyor_location[i].pointf.X;
+                float labelY = Data.Instance.conveyor_location[i].pointf.Y;
+
+                float cellX = (float)(labelX / resolution);
+                float cellY = (float)(labelY / resolution);
+
+                Point pos = new Point();
+                pos.X = (int)(dOrignX + cellX * (float)Wheelratio);
+                pos.Y = (int)(dOrignY - cellY * (float)Wheelratio);
+
+                temp.Location = new Point(pos.X-115, pos.Y-50);
+                temp.BorderStyle = BorderStyle.FixedSingle;
+                temp.Text = Data.Instance.conveyor_location[i].atc_name;
+                temp.Name = Data.Instance.conveyor_location[i].atc_name;
+                temp.Size = new Size(110, 10);
+                temp.BackColor = Color.Red;
+                temp.BringToFront();
+                label.Add(temp);
+                
+                PB.Controls.Add(temp);
+            }
+        }
         
         private void onRead_conv()
         {
             mainform.dbBridge.onDBRead_conveyor();
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //PictureBox PB = pictureBox1;
+            //Label label = new Label();
+            //label.Location=new Point(625, 1041);
+            //label.Size = new Size(100, 100);
+            //label.BackColor = Color.Red;
+            //label.BringToFront();
+            //label.Name = "abcd";
+            //label.BorderStyle = BorderStyle.FixedSingle;
+            //PB.Controls.Add(label);
+            //PictureBox pb = pictureBox1;
+            //label = new Label();
+            //label.Location = new Point(0, 0);
+            //label.Name = "label66";
+            //label.Size = new System.Drawing.Size(194, 60);
+            //label.ForeColor = Color.Maroon;
+            //label.Text = "abcdefg";
+            //label.BorderStyle = BorderStyle.FixedSingle;
+            //label.BringToFront();
+            //pb.Controls.Add(label);
+
+        }
+
         List<ATC_> save = new List<ATC_>();
 
         private void timer1_Tick(object sender, EventArgs e)

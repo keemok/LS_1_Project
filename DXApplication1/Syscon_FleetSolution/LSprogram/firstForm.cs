@@ -565,7 +565,7 @@ namespace Syscon_Solution.LSprogram
             if (strrobotid == "R_006")
                 missiontemp = "R_006_P";
             else if (strrobotid == "R_007")
-                missiontemp = "R_007"; //R_007_P 가 아닌지
+                missiontemp = "R_007_P"; //R_007_P 가 아닌지
             mainform.taskoperationform.parking(missiontemp, strrobotid);
             Invoke(new MethodInvoker(delegate ()
             {

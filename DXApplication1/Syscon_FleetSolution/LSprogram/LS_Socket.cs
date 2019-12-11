@@ -1553,8 +1553,7 @@ namespace Syscon_Solution
                     m7000 = Convert.ToBoolean(recv_plcData[0, 0]);
                     m7001 = Convert.ToBoolean(recv_plcData[0, 1]);
                     m7002 = Convert.ToBoolean(recv_plcData[0, 2]);
-                    m7003 = Convert.ToBoolean(recv_plcData[0, 3]);
-                    m7004 = Convert.ToBoolean(recv_plcData[0, 4]);
+                    m7003 = Convert.ToBoolean(recv_plcData[0, 3]);                    m7004 = Convert.ToBoolean(recv_plcData[0, 4]);
                     m7005 = Convert.ToBoolean(recv_plcData[0, 5]);
 
                 }
@@ -1998,9 +1997,9 @@ namespace Syscon_Solution
             if(atcNo == "3" || atcNo == "4" || atcNo == "5" || atcNo == "6")
             {
                 if(startATCNo != "")atcNo = startATCNo;
-            }
-            ATCState_Evt(HOST, atcNo, false);
+            }            
             SetSTATE(0);
+            ATCState_Evt(HOST, atcNo, false);
             ATCNoState.Remove(atcNo);
         }
 

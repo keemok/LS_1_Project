@@ -560,13 +560,11 @@ namespace Syscon_Solution.LSprogram
 
         private void accordionControlElement3_Click(object sender, EventArgs e)
         {
-            mapmonitoring monitor;
-            monitor = null;
-            monitor = new mapmonitoring(this);
-            monitor.oninit();
-            monitor.Show();
-            //systemLog systemlog = new systemLog();
-            //systemlog.Show();
+            //mapmonitoring monitor;
+            //monitor = null;
+            //monitor = new mapmonitoring(this);
+            //monitor.oninit();
+            //monitor.Show();
         }
 
         private void accordionControlElement27_Click(object sender, EventArgs e)
@@ -941,14 +939,18 @@ namespace Syscon_Solution.LSprogram
                 }
             }
         }
-        bool getATCState(string id)
+        bool getATCState(string atcNo)
         {
-            if (ATCState.ContainsKey(id))
+            if (ATCState.ContainsKey(atcNo))
             {
-                return ATCState[id];
+                return ATCState[atcNo];
+            }
+            else
+            {
+                addATCState(new string[] { atcNo });
             }
 
-            Console.WriteLine(id + " is empty id");
+            Console.WriteLine(atcNo + " is empty id");
             return false;
         }
         public void setATCState(string id, bool value)
@@ -1062,6 +1064,7 @@ namespace Syscon_Solution.LSprogram
                 deleteMisionList(id, atcNo);
                 printMsg($"상황 해제 [{atcNo}], [{false}] ");
                 setATCState(atcNo,false);
+                
             }
 
 
@@ -1349,16 +1352,21 @@ namespace Syscon_Solution.LSprogram
 
         private void accordionControlElement1_Click_1(object sender, EventArgs e)
         {
-            displaymap = new displayMap();
-            if (mainContainer.Controls.Count == 1)
-            {
-                mainContainer.Controls.RemoveAt(0);
+            //displaymap = new displayMap();
+            //if (mainContainer.Controls.Count == 1)
+            //{
+            //    mainContainer.Controls.RemoveAt(0);
 
-            }
+            //}
 
-            mainContainer.Controls.Add(displaymap);
-            mainContainer.BringToFront();
-            displaymap.aboutMove();
+            //mainContainer.Controls.Add(displaymap);
+            //mainContainer.BringToFront();
+            //displaymap.aboutMove();
+            mapmonitoring monitor;
+            monitor = null;
+            monitor = new mapmonitoring(this);
+            monitor.oninit();
+            monitor.Show();
         }
 
         private void dataCheck_Tick(object sender, EventArgs e)
@@ -1391,6 +1399,28 @@ namespace Syscon_Solution.LSprogram
                     checkCondition(id, atcNo);
                 }
             }
+        }
+
+        void refreshScenario()
+        {
+            foreach (string str in new List<string>(PLC_Socket_Info.Keys))
+            {
+                PLC_Socket_Info[str].SetSTATE(0);
+                PLC_Socket_Info[str].ATCNoState.Clear();
+            }
+
+            foreach (string str in new List<string>(ATCState.Keys))
+            {
+                setATCState(str, false);
+            }
+            
+            Session_1_mission.Clear();
+            Session_2_mission.Clear();
+
+            //리스트 박스 클리어 추가 필요
+            firstform.Session_1_listbox.Items.Clear();
+            firstform.Session_2_listbox.Items.Clear();
+
         }
 
 
@@ -2890,7 +2920,8 @@ namespace Syscon_Solution.LSprogram
                         //ABN100C #1 LINE A ATC NUMBER : 35
                         //mission_temp_list.Add("GO_12_15");
 
-                        taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 15);
+                        //taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 15);
+                        taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 9);  //수정
                         mission_temp_list.Add("TEMP_");
                         mission_temp_list.Add("ATC_33_T");
                         mission_temp_list.Add("GO_12_11");
@@ -2913,8 +2944,8 @@ namespace Syscon_Solution.LSprogram
                     }
                     else if (requiredID == "192.168.102.92")
                     {
-
-                        taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 15);
+                        //taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 15);
+                        taskoperationform.dijkstra_2(firstform.findLocation(strrobotid), 9);  //수정
                         mission_temp_list.Add("TEMP_");
                         mission_temp_list.Add("ATC_33_T");
                         mission_temp_list.Add("GO_12_8");
